@@ -1,0 +1,203 @@
+{
+   "blockdevices": [
+      {
+         "name": "sda",
+         "path": "/dev/sda",
+         "type": "disk",
+         "tran": "usb",
+         "hotplug": true,
+         "size": 16231956480,
+         "label": null,
+         "vendor": "SMI     ",
+         "model": "USB DISK",
+         "fstype": null,
+         "fsused": null,
+         "fssize": null,
+         "mountpoints": [],
+         "children": [
+            {
+               "name": "sda1",
+               "path": "/dev/sda1",
+               "type": "part",
+               "tran": null,
+               "hotplug": true,
+               "size": 16230907904,
+               "label": "MYSTICK",
+               "vendor": null,
+               "model": null,
+               "fstype": "vfat",
+               "fsused": 8192,
+               "fssize": 16215048192,
+               "mountpoints": [
+                  "/run/media/user/MYSTICK"
+               ]
+            }
+         ]
+      },
+      {
+         "name": "nvme0n1",
+         "path": "/dev/nvme0n1",
+         "type": "disk",
+         "tran": "nvme",
+         "hotplug": false,
+         "size": 1024209543168,
+         "label": null,
+         "vendor": null,
+         "model": "Internal NVMe",
+         "fstype": null,
+         "fsused": null,
+         "fssize": null,
+         "mountpoints": [],
+         "children": [
+            {
+               "name": "nvme0n1p1",
+               "path": "/dev/nvme0n1p1",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 272629760,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": "vfat",
+               "fsused": null,
+               "fssize": null,
+               "mountpoints": []
+            },
+            {
+               "name": "nvme0n1p2",
+               "path": "/dev/nvme0n1p2",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 16777216,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": null,
+               "fsused": null,
+               "fssize": null,
+               "mountpoints": []
+            },
+            {
+               "name": "nvme0n1p3",
+               "path": "/dev/nvme0n1p3",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 812312239616,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": "ntfs",
+               "fsused": 346390151168,
+               "fssize": 812312236032,
+               "mountpoints": []
+            },
+            {
+               "name": "nvme0n1p4",
+               "path": "/dev/nvme0n1p4",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 1617952768,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": "ntfs",
+               "fsused": null,
+               "fssize": null,
+               "mountpoints": []
+            },
+            {
+               "name": "nvme0n1p5",
+               "path": "/dev/nvme0n1p5",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 272629760,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": "vfat",
+               "fsused": null,
+               "fssize": null,
+               "mountpoints": []
+            },
+            {
+               "name": "nvme0n1p6",
+               "path": "/dev/nvme0n1p6",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 2147484160,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": "vfat",
+               "fsused": 114200576,
+               "fssize": 2143281152,
+               "mountpoints": [
+                  "/boot"
+               ]
+            },
+            {
+               "name": "nvme0n1p7",
+               "path": "/dev/nvme0n1p7",
+               "type": "part",
+               "tran": "nvme",
+               "hotplug": false,
+               "size": 207565619712,
+               "label": null,
+               "vendor": null,
+               "model": null,
+               "fstype": "crypto_LUKS",
+               "fsused": null,
+               "fssize": null,
+               "mountpoints": [],
+               "children": [
+                  {
+                     "name": "omarchy_root",
+                     "path": "/dev/mapper/omarchy_root",
+                     "type": "crypt",
+                     "tran": null,
+                     "hotplug": false,
+                     "size": 207548842496,
+                     "label": null,
+                     "vendor": null,
+                     "model": null,
+                     "fstype": "btrfs",
+                     "fsused": 42387357696,
+                     "fssize": 207548841984,
+                     "mountpoints": [
+                        "/var/log",
+                        "/home",
+                        "/var/cache/pacman/pkg",
+                        "/"
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "zram0",
+         "path": "/dev/zram0",
+         "type": "disk",
+         "tran": null,
+         "hotplug": false,
+         "size": 33095155712,
+         "label": "zram0",
+         "vendor": null,
+         "model": null,
+         "fstype": "swap",
+         "fsused": null,
+         "fssize": null,
+         "mountpoints": [
+            "[SWAP]"
+         ]
+      }
+   ]
+}
+---
+sda 480

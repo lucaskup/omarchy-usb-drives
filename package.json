@@ -1,0 +1,14 @@
+{
+  "name": "omarchy-usb-drives",
+  "private": true,
+  "description": "Tests for the USB drives Omarchy shell plugin (the plugin itself needs no Node).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.8"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:coverage": "node --test --experimental-test-coverage --test-coverage-include=Model.js --test-coverage-lines=100 --test-coverage-branches=100 --test-coverage-functions=100 tests/*.test.mjs",
+    "test:integration": "USB_DRIVES_INTEGRATION=1 node --test tests/integration/*.test.mjs"
+  }
+}

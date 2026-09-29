@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "lucaskup.usb-drives",
+  "name": "USB drives",
+  "version": "1.3.0",
+  "author": "lucaskup",
+  "description": "USB sticks, SD cards and external drives in the bar: used space, USB speed, live transfer rate, open and safe eject.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "USB drives",
+    "description": "USB sticks, SD cards and external drives in the bar: used space, USB speed, live transfer rate, open and safe eject.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showUsageOnBar": false,
+      "showConnection": true,
+      "showTransferSpeed": true,
+      "notifyOnEject": true
+    },
+    "schema": [
+      {
+        "key": "showUsageOnBar",
+        "type": "boolean",
+        "label": "Show used space on the bar",
+        "description": "Show how full the fullest drive is next to the bar icon.",
+        "defaultValue": false
+      },
+      {
+        "key": "showConnection",
+        "type": "boolean",
+        "label": "Show connection type",
+        "description": "Show the USB version and link speed in the popup.",
+        "defaultValue": true
+      },
+      {
+        "key": "showTransferSpeed",
+        "type": "boolean",
+        "label": "Show transfer speed",
+        "description": "Show live read and write speed while the popup is open.",
+        "defaultValue": true
+      },
+      {
+        "key": "notifyOnEject",
+        "type": "boolean",
+        "label": "Notify after eject",
+        "description": "Show a \"Safe to remove\" notification. Errors are always shown.",
+        "defaultValue": true
+      }
+    ]
+  },
+  "license": "MIT"
+}

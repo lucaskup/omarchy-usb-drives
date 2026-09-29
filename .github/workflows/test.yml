@@ -1,0 +1,21 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      # shellcheck ships with the runner image; qmllint comes from Qt's tools.
+      - name: Install qmllint
+        run: sudo apt-get update && sudo apt-get install -y qt6-declarative-dev-tools
+      - name: Unit, script and consistency tests with coverage
+        env:
+          QMLLINT: /usr/lib/qt6/bin/qmllint
+        run: npm run test:coverage
