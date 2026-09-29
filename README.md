@@ -1,5 +1,7 @@
 # USB Drives for Omarchy
 
+![USB Drives popup: a 16 GB stick with used space, USB 2.0 link and live write speed](preview.png)
+
 A small bar widget for [Omarchy](https://omarchy.org) that appears while a USB
 stick, SD card or external drive is plugged in. Click it to see each drive and
 eject it safely.
